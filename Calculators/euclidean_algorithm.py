@@ -4,6 +4,8 @@
 @author: Sedona Thomas
 """
 
+import numpy as np
+
 class Euclid(object):
     
     # Euclidean Algorithm
@@ -46,4 +48,8 @@ class Euclid(object):
         print(string + str(gcd))
         
         return gcd # your GCD
-    
+
+    def euclidean_distance(self, a, b):
+        diff = a - b
+        return np.sqrt(np.dot(diff, diff))
+
